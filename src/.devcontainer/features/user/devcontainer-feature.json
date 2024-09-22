@@ -1,0 +1,33 @@
+{
+    "id": "user",
+    "version": "0.0.0",
+    "name": "User",
+    "description": "Set up a user in the container.",
+    "options": {
+        "userName": {
+            "type": "string",
+            "default": "vscode",
+            "description": "The name of the user to set up."
+        },
+        "userUid": {
+            "type": "string",
+            "default": "1000",
+            "description": "The UID of the user to set up."
+        },
+        "userGid": {
+            "type": "string",
+            "default": "1000",
+            "description": "The GID of the user to set up."
+        },
+        "rename": {
+            "type": "boolean",
+            "default": false,
+            "description": "Allows the existing user to be renamed."
+        },
+        "increment": {
+            "type": "boolean",
+            "default": false,
+            "description": "Allows the UID and GID to be incremented if they are already in use."
+        }
+    }
+}

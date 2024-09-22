@@ -1,0 +1,6 @@
+{
+    "id": "common",
+    "version": "0.0.0",
+    "name": "Common",
+    "description": "Installs common dependencies for other features."
+}

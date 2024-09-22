@@ -1,0 +1,9 @@
+{
+    "id": "cmake",
+    "version": "0.0.0",
+    "name": "CMake",
+    "description": "Installs CMake from Kitware's APT repository.",
+    "dependsOn": {
+        "./features/common": {}
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "id": "zsh",
+    "version": "0.0.0",
+    "name": "Zsh",
+    "description": "Installs Zsh with Oh My Zsh.",
+    "dependsOn": {
+        "./features/common": {},
+        "./features/git": {}
+    },
+    "installsAfter": ["./features/user"],
+    "options": {
+        "root": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether to install Zsh (Oh My Zsh) in /root."
+        },
+        "home": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether to install Zsh (Oh My Zsh) in /home/*."
+        },
+        "theme": {
+            "type": "string",
+            "default": "robbyrussell",
+            "description": "The name of the theme to use."
+        },
+        "plugins": {
+            "type": "string",
+            "default": "git",
+            "description": "A space-separated list of plugins to be enabled."
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "id": "git",
+    "version": "0.0.0",
+    "name": "Git",
+    "description": "Installs Git from PPA",
+    "dependsOn": {
+        "./features/common": {}
+    }
+}

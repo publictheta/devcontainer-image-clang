@@ -1,0 +1,45 @@
+{
+    "name": "Clang",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "./features/cmake": {},
+        "./features/common": {},
+        "./features/git": {},
+        "./features/llvm": {
+            "clang": true,
+            "docs": true
+        },
+        "./features/locales": {
+            "locale": "en_US.UTF-8"
+        },
+        "./features/packages": {
+            "extra": true,
+            "man": true,
+            "packages": "ninja-build valgrind"
+        },
+        "./features/user": {
+            "userName": "vscode",
+            "userUid": 1000,
+            "userGid": 1000,
+            "rename": true
+        },
+        "./features/zsh": {}
+    },
+    "capAdd": ["SYS_PTRACE"],
+    "securityOpt": ["seccomp=unconfined"],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.cpptools",
+                "streetsidesoftware.code-spell-checker",
+                "twxs.cmake",
+                "vadimcn.vscode-lldb"
+            ]
+        }
+    },
+    "remoteUser": "vscode"
+}

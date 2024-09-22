@@ -1,0 +1,26 @@
+{
+    "id": "packages",
+    "version": "0.0.0",
+    "name": "Packages",
+    "description": "Installs apt packages.",
+    "dependsOn": {
+        "./features/common": {}
+    },
+    "options": {
+        "extra": {
+            "type": "boolean",
+            "default": false,
+            "description": "Install extra packages."
+        },
+        "man": {
+            "type": "boolean",
+            "default": false,
+            "description": "Install man pages"
+        },
+        "packages": {
+            "type": "string",
+            "default": "",
+            "description": "A space-separated list of packages to install."
+        }
+    }
+}

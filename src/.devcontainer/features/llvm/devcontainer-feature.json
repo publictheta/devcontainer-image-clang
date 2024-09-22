@@ -1,0 +1,42 @@
+{
+    "id": "llvm",
+    "version": "0.0.0",
+    "name": "LLVM",
+    "description": "Installs packages from LLVM's APT repository.",
+    "dependsOn": {
+        "./features/common": {}
+    },
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": ["18", "19"],
+            "default": "18",
+            "description": "The version of LLVM."
+        },
+        "clang": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether to install Clang."
+        },
+        "llvm": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether to install LLVM."
+        },
+        "docs": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether to install docs."
+        },
+        "extra": {
+            "type": "string",
+            "default": "",
+            "description": "A space-separated list of: libclang parallel python wasm ocaml mlir bolt flang"
+        },
+        "packages": {
+            "type": "string",
+            "default": "",
+            "description": "A space-separated list of additional packages to install. \"#\" can be used as a placeholder for the version number."
+        }
+    }
+}

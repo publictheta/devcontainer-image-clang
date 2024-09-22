@@ -1,0 +1,18 @@
+{
+    "id": "locales",
+    "version": "0.0.0",
+    "name": "Locales",
+    "description": "Installs locales.",
+    "options": {
+        "locale": {
+            "type": "string",
+            "default": "en_US.UTF-8",
+            "description": "The locale to set."
+        },
+        "extraLocales": {
+            "type": "string",
+            "default": "",
+            "description": "A space-separated list of additional locales to generate. For example, \"fr_FR.UTF-8 es_ES.UTF-8\"."
+        }
+    }
+}
